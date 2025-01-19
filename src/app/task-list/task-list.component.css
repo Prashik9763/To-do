@@ -1,0 +1,63 @@
+/* Status badge colors */
+.badge-warning {
+  background-color: #ff9800; /* Vibrant orange for 'Not Started' */
+  color: white;
+}
+
+.badge-info {
+  background-color: #03a9f4; /* Bright blue for 'In Progress' */
+  color: white;
+}
+
+.badge-success {
+  background-color: #4caf50; /* Strong green for 'Completed' */
+  color: white;
+}
+
+/* Additional styling for cards and buttons */
+.card {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.card-body {
+  background-color: #ffffff;
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Card lifting effect */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-title:hover {
+  color: #ff6347; /* Coral color when card title is hovered */
+}
+
+/* Button styles */
+.btn-warning {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.btn-danger {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+/* Button hover effect */
+.btn:hover {
+  opacity: 0.8;
+}

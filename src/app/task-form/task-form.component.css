@@ -1,0 +1,88 @@
+/* Make the form fields horizontally aligned */
+.task-form .row {
+  margin-bottom: 1.5rem;
+}
+
+/* Styling for each label */
+.form-label {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333; /* Darker color for contrast */
+  transition: color 0.3s ease;
+}
+
+/* Styling for inputs and selects */
+.form-control-lg {
+  padding: 1rem;
+  font-size: 1.1rem;
+  border-radius: 0.5rem;
+  background-color: #f9f9f9; /* Soft background */
+  border: 1px solid #ddd;
+  transition: background-color 0.3s, border-color 0.3s ease;
+}
+
+/* Focus effect for form controls */
+.form-control:focus, .form-select:focus, .form-control-lg:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 105, 180, 0.5); /* Pink focus */
+  border-color: #ff69b4; /* Pink border */
+  background-color: #fff0f6; /* Soft pink background on focus */
+}
+
+/* Fancy colors for the buttons */
+.btn-success {
+  background-color: #ff6347; /* Coral for a vibrant look */
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s, transform 0.2s ease;
+}
+
+/* Hover effect for buttons */
+.btn-success:hover {
+  background-color: #ff4500; /* Darker coral */
+  transform: scale(1.05);
+}
+
+/* Custom margin and padding for form groups */
+.row.mb-4 .col-md-4 {
+  margin-bottom: 1rem;
+}
+
+/* Styling for inputs, selects, and textarea */
+input, select, textarea {
+  background-color: #f0f8ff; /* Light blue for input fields */
+  border-radius: 5px;
+  padding: 0.75rem;
+  transition: background-color 0.3s, box-shadow 0.3s ease;
+}
+
+/* Input, select, textarea focus effect */
+input:focus, select:focus, textarea:focus {
+  background-color: #e0f7fa; /* Light cyan on focus */
+}
+
+/* Styling for textarea */
+textarea.form-control-lg {
+  resize: vertical;
+}
+
+/* Centering submit button */
+.text-center {
+  margin-top: 2rem;
+}
+
+/* Background color effect on form container */
+.task-form {
+  background-color: #fff9c4; /* Soft yellow background for the form */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for form container */
+.task-form:hover {
+  background-color: #fff59d; /* Lighter yellow on hover */
+}

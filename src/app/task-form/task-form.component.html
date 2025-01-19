@@ -1,0 +1,81 @@
+<div class="container mt-5">
+    <h2 class="text-center text-primary mb-4">{{ editingTask ? 'Edit Task' : 'Add New Task' }}</h2>
+  
+    <form (ngSubmit)="submitTask()" class="task-form">
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <label for="taskTitle" class="form-label text-success">What is to do:</label>
+          <input
+            id="taskTitle"
+            [(ngModel)]="taskTitle"
+            name="taskTitle"
+            class="form-control form-control-lg"
+            required
+            placeholder="Enter task"
+          />
+        </div>
+  
+        <div class="col-md-4">
+          <label for="status" class="form-label text-info">Status:</label>
+          <select
+            id="status"
+            [(ngModel)]="taskStatus"
+            name="status"
+            class="form-select form-select-lg"
+          >
+            <option value="Not Started">Not Started</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </div>
+  
+        <div class="col-md-4">
+          <label for="dueDate" class="form-label text-warning">Due Date:</label>
+          <input
+            type="date"
+            id="dueDate"
+            [(ngModel)]="taskDueDate"
+            name="dueDate"
+            class="form-control form-control-lg"
+            required
+          />
+        </div>
+      </div>
+  
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <label for="priority" class="form-label text-danger">Priority:</label>
+          <select
+            id="priority"
+            [(ngModel)]="taskPriority"
+            name="priority"
+            class="form-select form-select-lg"
+          >
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+          </select>
+        </div>
+  
+        <div class="col-md-8">
+          <label for="description" class="form-label text-primary">Description:</label>
+          <textarea
+            id="description"
+            [(ngModel)]="taskDescription"
+            name="description"
+            class="form-control form-control-lg"
+            required
+            rows="3"
+            placeholder="Enter task description"
+          ></textarea>
+        </div>
+      </div>
+  
+      <div class="text-center">
+        <button type="submit" class="btn btn-success btn-lg">
+          {{ editingTask ? 'Save Changes' : 'Add Task' }}
+        </button>
+      </div>
+    </form>
+  </div>
+  

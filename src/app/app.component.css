@@ -1,0 +1,21 @@
+/* General link styling */
+a {
+    margin: auto;
+    color: #8a2be2; /* Blueviolet for a stylish look */
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  a:hover {
+    color: #ff6347; /* Coral color on hover */
+    transform: scale(1.1); /* Slightly enlarges the link on hover */
+  }
+  
+  a:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px rgba(255, 105, 180, 0.5); /* Pink glow on focus */
+  }
+  
